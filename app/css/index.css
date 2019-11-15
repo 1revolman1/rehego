@@ -142,7 +142,15 @@ section.menu .wrapper .block .input textarea::-webkit-scrollbar { width: 12px; b
 
 section.menu .wrapper .block .input textarea::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); background-color: #ccc; }
 
+section.menu .wrapper .block .input .block { margin: unset; padding: 15px 0; }
+
+section.menu .wrapper .block .input .block .button { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: 50px; border-radius: 6px; background-color: #4a90e2; }
+
+section.menu .wrapper .block .input .block .button a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100%; font-family: "SFProDisplay", sans-serif; font-size: 25px; font-weight: 400; font-stretch: normal; font-style: normal; line-height: 1.2; letter-spacing: normal; text-align: center; color: #ffffff; text-decoration: none; }
+
 section.menu .wrapper .block .block:last-child .input:last-child input { height: 250px; }
+
+@media (min-width: 1024px) { section.menu .wrapper .block .input .block { -webkit-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; max-width: 200px; } }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
