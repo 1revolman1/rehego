@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900|Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="wrapper-logo">
+          <!-- <a href="#">Marble</a> -->
+          <a href=""
+            ><img src="./img/bespoke/logolibrary copy@3x.png" alt=""
+          /></a>
+        </div>
+        <div class="wrapper-menu">
+          <input type="checkbox" id="menu__toggle" />
+          <label for="menu__toggle" class="menu_btn">
+            <div class="burg"></div>
+          </label>
+          <ul class="menu__box">
+            <li><a href="">HOME</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">LIBRARY</a></li>
+            <li><a href="">COMPOSERS</a></li>
+            <li class="active"><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="menu">
+      <div class="wrapper">
+        <div class="block">
+          <div class="input">
+            <label>Full Name</label>
+            <input type="text" required />
+          </div>
+          <div class="input">
+            <label>Email Name</label>
+            <input type="email" required />
+          </div>
+          <div class="input">
+            <label>Phone</label>
+            <input
+              type="tel"
+              required
+              required=""
+              pattern="^[0-9,+, ,(,),-]+"
+              type="tel"
+              data-mask="+1 000 000 00 00"
+              placeholder="+1 ___ ___ __ __"
+              autocomplete="off"
+              maxlength="18"
+            />
+          </div>
+          <div class="input">
+            <label>Company</label>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="block">
+          <div class="input">
+            <label>Media</label>
+            <input type="text" required />
+          </div>
+          <div class="input">
+            <label>Territory</label>
+            <input type="email" required />
+          </div>
+          <div class="input">
+            <label>Length</label>
+            <input type="text" required />
+          </div>
+          <div class="input">
+            <label>Brief Description</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              wrap="soft"
+              re
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./img/bespoke/logolibrary copy.png" alt="" />
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href=""
+                ><img src="./img/bespoke/iconmonstr-facebook-3.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./img/bespoke/iconmonstr-twitter-3.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./img/bespoke/iconmonstr-instagram-11.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./img/bespoke/iconmonstr-youtube-3.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./img/bespoke/iconmonstr-google-plus-3.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="text">
+          <a href="tel:+4402072879268">+44 (0)20 7287 9268 </a>
+          <a href="mailto:contact@rehegoolibrarycom"
+            >contact@rehegoolibrarycom</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      location="./"
+      src="js/scripts.js"
+      defer
+      type="text/javascript"
+    ></script>
+    <script src="./libs/mask-plugin/jquery.mask.min.js"></script>
+  </body>
+</html>

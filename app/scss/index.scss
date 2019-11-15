@@ -1,0 +1,113 @@
+@import "mix";
+@import "header";
+@import "bespoke";
+@import "footer";
+@import "contact";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+// @media (min-width: 768px) {
+//   header {
+//     .wrapper {
+//       max-width: 1480px;
+//     }
+//   }
+// }
+@media (min-width: 768px) {
+  header {
+    .wrapper {
+      max-width: 1024px;
+    }
+  }
+  footer {
+    .wrapper {
+      .social {
+        max-width: 330px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    flex-direction: column;
+    position: unset;
+    height: 72px;
+    .wrapper {
+      max-width: 1440px;
+      // padding: 20px;
+      padding: 9px 8px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .wrapper-logo {
+        width: unset;
+      }
+      .wrapper-menu {
+        background: transparent;
+        width: unset;
+        position: unset;
+        label {
+          display: none;
+        }
+        input {
+          display: none;
+        }
+        ul {
+          padding: unset;
+          position: unset;
+          opacity: 1000;
+          width: initial;
+          display: flex;
+          z-index: 9999;
+          transition: top 0s linear;
+          background: transparent;
+          li {
+            padding: 0 15px;
+            a {
+              color: rgba(255, 255, 255, 0.85);
+              font-size: 16px;
+            }
+          }
+        }
+        #menu__toggle:checked ~ .menu__box {
+          top: inherit;
+        }
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      justify-content: space-between;
+      .logo {
+        margin: unset;
+      }
+      .social {
+        margin: unset;
+        max-width: 500px;
+        justify-content: flex-end;
+        ul {
+          li {
+            a {
+              img {
+                width: 65px;
+                height: 41px;
+              }
+            }
+          }
+        }
+      }
+      .text {
+        margin: unset;
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

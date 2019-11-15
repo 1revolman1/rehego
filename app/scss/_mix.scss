@@ -1,0 +1,27 @@
+@mixin flex($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin block(
+  $w: 100%,
+  $h: fit-content,
+  $border: none,
+  $bRaduis: 0,
+  $bg: transparent
+) {
+  width: $w;
+  height: $h;
+  border: $border;
+  border-radius: $bRaduis;
+  background: $bg;
+}
+
+@mixin text($size, $color: inherit, $W: normal) {
+  font-size: $size;
+  color: $color;
+  font-weight: $W;
+  text-decoration: none;
+}
