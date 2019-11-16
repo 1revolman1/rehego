@@ -207,6 +207,8 @@ section.slider .wrapper .slid .slide h2 { font-family: "SFProText", sans-serif; 
 
 section.information { background: #161616; }
 
+section.information .wrapper { padding: 0 35px; }
+
 section.information .wrapper .block:nth-child(1) { margin: 65px 0; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: unset; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
 
 section.information .wrapper .block:nth-child(1) .text { max-width: 325px; min-height: 308px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
@@ -223,7 +225,7 @@ section.information .wrapper .block:nth-child(1) .text .txt p { margin: 30px 0; 
 
 section.information .wrapper .element { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: unset; }
 
-section.information .wrapper .element .text { width: 100%; max-width: 479px; min-height: 308px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+section.information .wrapper .element .text { width: 100%; max-width: 456px; min-height: 308px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
 section.information .wrapper .element .text .img { margin: 10px 0; max-width: 72px; min-height: 65px; }
 
@@ -239,23 +241,51 @@ section.information .wrapper .element .text:nth-child(even) { background-color: 
 
 section.information .wrapper .element .text:nth-child(odd) { background-color: #5a656c; }
 
-section.trusted .wrapper .block:nth-child(1) { position: relative; }
+section.trusted { background: #232323; }
 
-section.trusted .wrapper .block:nth-child(1) .text h3 { max-width: unset; position: relative; }
+section.trusted .wrapper { padding: 0 35px; }
 
-section.trusted .wrapper .block:nth-child(1) .text .line { position: absolute; top: 39%; left: 50%; max-width: 955px; width: 60%; -webkit-transform: translate(-50%, -45%); -ms-transform: translate(-50%, -45%); transform: translate(-50%, -45%); }
+section.trusted .wrapper .block:nth-child(1) { max-width: 1100px; position: relative; }
 
-section.trusted .wrapper .block:nth-child(1) .container { margin: 50px 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+section.trusted .wrapper .block:nth-child(1) .text h3 { max-width: unset; font-family: "SFProText", sans-serif; font-size: 35px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.17; letter-spacing: -0.2px; text-align: center; color: #ffffff; }
 
-section.trusted .wrapper .block:nth-child(1) .container .image { margin: 0 30px; max-height: 120px; }
+section.trusted .wrapper .block:nth-child(1) .text .line { position: absolute; top: 35%; left: 50%; max-width: 955px; width: 60%; -webkit-transform: translate(-50%, -45%); -ms-transform: translate(-50%, -45%); transform: translate(-50%, -45%); }
 
-section.trusted .wrapper .block:nth-child(1) .container .image img { width: 100%; height: auto; }
+section.trusted .wrapper .block:nth-child(1) .container { margin: 90px 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+section.trusted .wrapper .block:nth-child(1) .container img { margin: 0 15px; width: 100%; height: auto; max-width: 240px; max-height: 88px; }
+
+section.trusted .wrapper .block:nth-child(1) .container img:nth-child(5) { max-width: 80px; }
+
+section.trusted .wrapper .block:nth-child(1) .container img:nth-child(1) { max-width: 80px; }
 
 section.trusted .wrapper .block:nth-child(2) { margin: 0; max-width: 1318.5px; }
 
-section.trusted .wrapper .block:nth-child(2) .image { margin: 0; width: 100%; -o-object-fit: contain; object-fit: contain; min-height: 790px; }
+section.trusted .wrapper .block:nth-child(2) .image { margin: 0; width: 100%; -o-object-fit: contain; object-fit: contain; height: auto; }
 
 section.trusted .wrapper .block:nth-child(2) .image img { width: 100%; height: 100%; }
+
+section.different { width: 100%; background-image: url("../img/home/music-guitar-concert-microphone-mic-studio-89799-pxhere.com@3x.png"); background-size: 100% 100%; }
+
+section.different .wrapper { padding: 0 0 25px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0 auto; max-width: 1440px; min-height: 600px; }
+
+section.different .wrapper .block:nth-child(1) { max-width: unset; height: 100%; padding: 0 35px; }
+
+section.different .wrapper .block:nth-child(1) .text { max-width: unset; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+section.different .wrapper .block:nth-child(1) .text .line { position: absolute; top: 20%; }
+
+section.different .wrapper .block:nth-child(1) .text h3 { margin: 0 0 70px 0; max-width: unset; font-family: "SFProText", sans-serif; font-size: 35px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.17; letter-spacing: -0.2px; text-align: center; color: #ffffff; }
+
+section.different .wrapper .block:nth-child(1) .text p { margin-top: 45px; font-family: "SegoeUI", sans-serif; font-size: 25px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.2; letter-spacing: normal; text-align: left; color: #ffffff; }
+
+section.different .wrapper .block:nth-child(1) .button { position: relative; top: 50px; background-color: #4a90e2; width: 230.4px; height: 52.1px; border-radius: 6px; }
+
+section.different .wrapper .block:nth-child(1) .button a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; text-decoration: none; width: 100%; height: 100%; font-family: "SegoeUI", sans-serif; font-size: 25px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.2; letter-spacing: normal; text-align: left; color: #ffffff; }
+
+section.block-image .wrapper .element .text img { width: 100%; height: 100%; }
+
+section.block-image .wrapper .element .text a { width: 100%; height: 100%; }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
