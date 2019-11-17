@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // dots: true,
       adaptiveHeight: true,
       infinite: true,
-      nextArrow: '<img class="prev" src="../img/home/back.svg" alt="">',
-      prevArrow: '<img class="next" src="../img/home/next.svg" alt="">',
+      nextArrow: '<img class="prev" src="./img/home/back.svg" alt="">',
+      prevArrow: '<img class="next" src="./img/home/next.svg" alt="">',
       cssEase: "linear"
     });
   }

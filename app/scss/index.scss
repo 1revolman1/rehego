@@ -14,6 +14,22 @@
 html {
   overflow-x: hidden;
 }
+header {
+  .wrapper {
+    .wrapper-menu {
+      .menu__box {
+        .active {
+          a {
+            color: #2869d6;
+          }
+        }
+        li:hover a {
+          color: #2869d6;
+        }
+      }
+    }
+  }
+}
 // @media (min-width: 768px) {
 //   header {
 //     .wrapper {
