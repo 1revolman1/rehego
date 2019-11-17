@@ -12,11 +12,13 @@ section.slider {
   background-image: url("../img/home/broadcast-broadcasting-camcorder-66134@3x.png");
   background-size: 100% 100%;
   .wrapper {
+    padding: 35px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1440px;
-    min-height: 900px;
+    // min-height: 900px;
+    min-height: 500px;
     margin: 0 auto;
     background: transparent;
     .slid {
@@ -44,7 +46,8 @@ section.slider {
         padding: 0 50px;
         h2 {
           font-family: "SFProText", sans-serif;
-          font-size: 60px;
+          //   font-size: 60px;
+          font-size: 40px;
           font-weight: 500;
           font-stretch: normal;
           font-style: normal;
@@ -93,7 +96,7 @@ section.information {
             max-width: 60%;
             margin: unset;
             font-family: "SegoeUI", sans-serif;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -105,7 +108,7 @@ section.information {
           p {
             margin: 30px 0;
             font-family: "SegoeUI", sans-serif;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -152,7 +155,7 @@ section.information {
             // max-width: 60%;
             margin: unset;
             font-family: "SegoeUI", sans-serif;
-            font-size: 35px;
+            font-size: 30px;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -162,9 +165,9 @@ section.information {
             color: #ffffff;
           }
           p {
-            margin: 30px 0;
+            margin: 16px 0;
             font-family: "SegoeUI", sans-serif;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -206,7 +209,8 @@ section.trusted {
         }
         .line {
           position: absolute;
-          top: 35%;
+          //   top: 35%;
+          top: 15%;
           left: 50%;
           max-width: 955px;
           width: 60%;
@@ -220,7 +224,7 @@ section.trusted {
         align-items: center;
         flex-wrap: wrap;
         img {
-          margin: 0 15px;
+          margin: 20px 15px;
           width: 100%;
           height: auto;
           max-width: 240px;
@@ -279,6 +283,7 @@ section.different {
         .line {
           position: absolute;
           top: 20%;
+          width: 80%;
         }
         h3 {
           margin: 0 0 70px 0;
@@ -296,7 +301,8 @@ section.different {
         p {
           margin-top: 45px;
           font-family: "SegoeUI", sans-serif;
-          font-size: 25px;
+          //   font-size: 25px;
+          font-size: 20px;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
@@ -345,6 +351,91 @@ section.block-image {
         a {
           width: 100%;
           height: 100%;
+        }
+      }
+    }
+  }
+}
+// @media (min-width: 768px) {
+//   section.different {
+//     .wrapper {
+//       .block:nth-child(1) {
+//         .text {
+//           .line {
+//             width: 48%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+@media (min-width: 1024px) {
+  section.slider {
+    .wrapper {
+      min-height: 900px;
+      .slid {
+        .slide {
+          h2 {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+  section.information {
+    .wrapper {
+      .block:nth-child(1) {
+        .text {
+          .txt {
+            h3 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+      .element {
+        .text {
+          .txt {
+            h3 {
+              font-size: 35px;
+            }
+            p {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  section.trusted {
+    .wrapper {
+      .block:nth-child(1) {
+        .text {
+          .line {
+            top: 35%;
+          }
+        }
+        .container {
+          img {
+            margin: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  section.different {
+    .wrapper {
+      .block:nth-child(1) {
+        .text {
+          .line {
+            width: 650px;
+          }
+          p {
+            font-size: 25px;
+          }
         }
       }
     }

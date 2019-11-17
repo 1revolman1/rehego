@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+  if (document.querySelectorAll(".slid").length > 0) {
+    $(".slid").slick({
+      // slidesToShow: 3,
+      // slidesToScroll: 3,
+      // dots: true,
+      adaptiveHeight: true,
+      infinite: true,
+      nextArrow: '<img class="prev" src="../img/home/back.svg" alt="">',
+      prevArrow: '<img class="next" src="../img/home/next.svg" alt="">',
+      cssEase: "linear"
+    });
+  }
   document.querySelectorAll(".release .wrapper > .block").forEach(e => {
     if (e.outerHTML.includes("h3")) {
       var arr = [].slice.call(e.children);
@@ -18,17 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
         doin.style.width = `${(100 - procent) / 2 - 6}%`;
       });
     }
-  });
-});
-document.addEventListener("DOMContentLoaded", function() {
-  $(".slid").slick({
-    // slidesToShow: 3,
-    // slidesToScroll: 3,
-    // dots: true,
-    adaptiveHeight: true,
-    infinite: true,
-    nextArrow: '<img class="prev" src="../img/home/back.svg" alt="">',
-    prevArrow: '<img class="next" src="../img/home/next.svg" alt="">',
-    cssEase: "linear"
   });
 });
