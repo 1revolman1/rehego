@@ -18,10 +18,52 @@ section.credits {
     .block:nth-child(2) {
       max-width: 1300px;
       .image {
+        margin: unset;
         width: 100%;
         height: auto;
         max-width: 240px;
         min-height: 350px;
+        a {
+          display: block;
+          height: unset;
+          img {
+            max-height: 342px;
+          }
+        }
+      }
+    }
+    .slider_block,
+    .slid {
+      display: flex;
+      position: relative;
+      // width: 100%;
+      width: 90%;
+      margin: 0 auto;
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .prev,
+      .next {
+        top: calc(50% - 10%);
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        z-index: 1;
+        fill: #ccc;
+        cursor: pointer;
+      }
+      .next {
+        right: -4%;
+      }
+      .prev {
+        left: -4%;
+      }
+      .slide {
+        background: transparent;
+        position: relative;
+        padding: 0 50px;
       }
     }
   }
@@ -53,7 +95,14 @@ section.video-examples {
         max-width: 1300px;
         .image {
           max-width: 240px;
-          min-height: 350px;
+          min-height: 340px;
+          max-height: 350px;
+          a {
+            img {
+              // max-width: 240px;
+              max-height: 345px;
+            }
+          }
         }
       }
     }
@@ -84,7 +133,14 @@ section.video-examples {
         max-width: 1300px;
         .image {
           max-width: 310px;
-          min-height: 450px;
+          min-height: 440px;
+          max-height: 450px;
+          a {
+            img {
+              max-height: 445px;
+              // max-width: 310px;
+            }
+          }
         }
       }
     }
@@ -113,9 +169,26 @@ section.video-examples {
       padding-top: 20px;
       .block:nth-child(2) {
         max-width: 1300px;
+        // .slick-slide {
+        //   div {
+        //     min-width: 573.5px;
+        //     min-height: 339.6px;
+        //   }
+        // }
         .image {
+          max-height: 544px;
+          min-height: 530px;
           max-width: 375.5px;
-          min-height: 544px;
+          a {
+            height: unset;
+            img {
+              // max-width: 375.5px;
+              max-height: 540px;
+            }
+          }
+          // max-width: 375.5px;
+          // min-height: 544px;
+
           // width: 375.5px;
           //   height: 544px;
         }

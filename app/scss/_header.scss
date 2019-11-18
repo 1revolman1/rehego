@@ -47,7 +47,7 @@ header {
       .menu_btn {
         position: relative;
         @include flex();
-        @include block($w: 14%, $h: 90%, $bg: #545454);
+        @include block($w: 75px, $h: 90%, $bg: #545454);
         box-sizing: border-box;
         cursor: pointer;
         border-radius: 5px;

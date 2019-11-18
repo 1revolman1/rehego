@@ -4,7 +4,7 @@ footer .wrapper { padding: 9px 8px; display: -webkit-box; display: -webkit-flex;
 
 footer .wrapper .logo { margin: 10px 0; }
 
-footer .wrapper .social { margin: 10px 0; max-width: 500px; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+footer .wrapper .social { margin: 10px 1%; max-width: 500px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
 footer .wrapper .social ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 

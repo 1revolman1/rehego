@@ -11,6 +11,45 @@ document.addEventListener("DOMContentLoaded", function() {
       cssEase: "linear"
     });
   }
+  if (document.querySelectorAll(".slider_block").length > 0) {
+    $(".slider_block").slick({
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      arrows: false,
+      infinite: true,
+      // mobileFirst: true,
+      nextArrow: '<img class="prev" src="./img/home/back.svg" alt="">',
+      prevArrow: '<img class="next" src="./img/home/next.svg" alt="">',
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            // autoplay: false,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            // autoplay: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1366,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }
+      ]
+      // variableWidth: true,
+    });
+  }
+
   document.querySelectorAll(".release .wrapper > .block").forEach(e => {
     if (e.outerHTML.includes("h3")) {
       var arr = [].slice.call(e.children);
