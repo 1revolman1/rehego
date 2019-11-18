@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $(".slider_block").slick({
       slidesToShow: 3,
       adaptiveHeight: true,
-      arrows: false,
+      // arrows: true,
       infinite: true,
       // mobileFirst: true,
       nextArrow: '<img class="prev" src="./img/home/back.svg" alt="">',

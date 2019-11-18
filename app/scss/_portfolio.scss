@@ -16,6 +16,7 @@ section.credits {
       //   }
     }
     .block:nth-child(2) {
+      padding: 0 20px;
       max-width: 1300px;
       .image {
         margin: unset;
@@ -52,13 +53,14 @@ section.credits {
         width: 60px;
         z-index: 1;
         fill: #ccc;
+        overflow: hidden;
         cursor: pointer;
       }
       .next {
-        right: -4%;
+        right: -17px;
       }
       .prev {
-        left: -4%;
+        left: -17px;
       }
       .slide {
         background: transparent;
@@ -141,6 +143,12 @@ section.video-examples {
               // max-width: 310px;
             }
           }
+        }
+        .next {
+          right: -35px;
+        }
+        .prev {
+          left: -35px;
         }
       }
     }

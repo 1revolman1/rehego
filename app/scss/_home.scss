@@ -70,8 +70,10 @@ section.information {
   background: #161616;
   .wrapper {
     // padding: 0 35px;
-    padding: 0 15px;
+    // padding: 0 15px;
+    padding: unset;
     .block:nth-child(1) {
+      padding: 0 15px;
       margin: 65px 0;
       flex-wrap: wrap;
       max-width: unset;
@@ -136,10 +138,10 @@ section.information {
       justify-content: space-evenly;
       margin: unset;
       .text {
-        margin: 15px 0 0;
+        // margin: 15px 0 0;
         width: 100%;
         // max-width: 479px;
-        max-width: 456px;
+        // max-width: 456px;
         min-height: 308px;
         display: flex;
         flex-direction: column;
@@ -382,6 +384,13 @@ section.block-image {
   }
   section.different {
     background-position: 50% 50%;
+  }
+  section.information {
+    .wrapper {
+      .element {
+        flex-wrap: nowrap;
+      }
+    }
   }
   // section.different {
   //   .wrapper {
